@@ -1,0 +1,170 @@
+.fade{animation-name:fade;animation-duration: 0.5s;}
+@keyframes fade{from{opacity: 0.1;}to{opacity: 1;}}
+
+#first-supplement,
+#second-supplement,
+#third-supplement,
+#four-supplement {
+    display: none;
+}
+
+.label-check {
+    position: absolute;
+    top: 12px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease transform, 0.2s ease background-color,
+        0.2s ease box-shadow;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid rgba(153, 153, 153, 0.44);
+}
+
+
+.tick_mark {
+    position: absolute;
+    top: 8px;
+    left: -9px;
+    width: 10px;
+    margin: 0 auto;
+    margin-left: 14px;
+    transform: rotateZ(-40deg);
+}
+
+.tick_mark:before,
+.tick_mark:after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 2px;
+    opacity: 0;
+    transition: 0.2s ease transform, 0.2s ease opacity;
+}
+
+.tick_mark:before {
+    left: 0;
+    bottom: 0;
+    width: 1.5px;
+    height: 5px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.23);
+    transform: translateY(-68px);
+}
+
+.tick_mark:after {
+    left: 0;
+    bottom: 0;
+    width: 9px;
+    height: 2px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.23);
+    transform: translateX(78px);
+}
+
+#first-supplement:checked + .label-check,
+#second-supplement:checked + .label-check,
+#third-supplement:checked + .label-check,
+#four-supplement:checked + .label-check {
+    background-color: #9A4331;
+    /* box-shadow: 0 7px 10px #945c51b6; */
+}
+
+
+#first-supplement:checked + .label-check .tick_mark:before,
+#first-supplement:checked + .label-check .tick_mark:after,
+#second-supplement:checked + .label-check .tick_mark:before,
+#second-supplement:checked + .label-check .tick_mark:after,
+#third-supplement:checked + .label-check .tick_mark:before,
+#third-supplement:checked + .label-check .tick_mark:after,
+#four-supplement:checked + .label-check .tick_mark:before,
+#four-supplement:checked + .label-check .tick_mark:after {
+    transform: translate(0);
+    opacity: 1;
+}
+
+
+.input {
+    position: relative;
+}
+  
+.order-data__name {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 240px;
+    height: 48px;
+    padding: 0 16px 0 16px;
+    color: #000000;
+    border: 1px solid #CCCCCC;
+}
+
+.order-data__name-large {
+    width: 526px;
+}
+
+.order-adress__name {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100px;
+    height: 48px;
+    padding: 0 16px 0 16px;
+    color: #000000;
+    border: 1px solid #CCCCCC;
+}
+
+  
+  
+.label {
+    color: #999;
+    position: absolute;
+    pointer-events: none;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    left: 10px;
+    top: 14px;
+    transition: 0.5s;
+}
+
+.input_text:focus ~ .label, .input_text:valid ~ .label {
+    top: -10px;
+    left: 15px;
+    font-size: small;
+    color: #000000;
+    background-color:#fff;
+    padding:0 5px 0 5px;
+}
+
+.contact__comment {
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-weight:600;
+    font-size: 16px;
+    width: 540px;
+    height: 128px;
+    padding: 10px;
+    color: #000000;
+    border: 1px solid #CCCCCC;
+    margin: 0 0 24px 0;
+  }
+  
+textarea:focus ~ label, textarea:valid ~ label {
+top: -10px;
+left: 15px;
+font-size: small;
+color: #000000;
+background-color:#fff;
+padding: 0 5px 0 5px;
+}
