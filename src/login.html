@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Войти / Регистрация</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/verveine" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__navigation">
+                    <div class="header__logo">
+                        <img src="icons/logo.svg" alt="logo">
+                    </div>
+                    <nav class="header__nav">
+                        <a href="#menu" class="header__link">Меню</a>
+                        <a href="#stocks" class="header__link">Акции</a>
+                        <a href="#" class="header__link">О компании</a>
+                        <a href="#" class="header__link">Доставка</a>
+                        <a href="#contact" class="header__link">Поддержка</a>
+                    </nav>
+                </div>
+                <div class="header__profile">
+                    <!-- <div class=" header__profile header__profile-login ">
+                        <div class="header__profile-icon">
+                            <img src="icons/busket.svg" alt="busket">
+                        </div>
+                        <div class="header__profile-money">
+                            0 ₽ 
+                        </div>
+                        <div class="header__profile-img">
+                            <div></div>
+                        </div>
+                    </div> -->
+                    <div class="header__profile-enter">
+                        <a href="#" class="header__link">Войти / Регистрация</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="container">
+            <div class="login__menu">
+                <div class="login__wrapper">
+                    <div class="login__enter-reg">
+                        <div class="login__select-menu">
+                            <a href="#" class="login__close"><img src="icons/close.svg" alt="close"></a>
+                            <div class="login__select">
+                                <ul>
+                                    <li><button data-tab data-filter="left" class="login__tab login__tab-left login__tab-active">Вход</button></li>
+                                    <li><button data-tab data-filter='right' class="login__tab login__tab-right">Регистрация</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="login__enter  left">
+                            <div class="login__title">
+                                <h2>Вход в аккаунт</h2>
+                            </div>
+                            <form action="#" class="login__form">
+                                <div class="input login__input">   
+                                    <input type="text" name="name"   class="input__text" required>
+                                    <label class="label">Телефон</label>
+                                </div>
+                                <div class="input login__input">   
+                                    <input type="password" id="password__enter" name="password"  class="input__text" required>
+                                    <label class="label">Пароль</label>
+                                    <img  data-hide src="icons/open_eye.svg" alt="eye" class="open__eye fade hide">
+                                    <img  data-show src="icons/close_eye.svg" alt="eye" class="close__eye fade">
+                                </div>
+                                <div class="login__forget">
+                                    <button data-forget class="button__clear">Забыли пароль?</button>
+                                </div>
+                                <div class="login__button">
+                                    <button class="button button__big button__dark">
+                                        Войти
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+    
+    
+                        <div class="login__enter right hide">
+                            <div class="login__title">
+                                <h2>Регистрация</h2>
+                            </div>
+                            <form action="#" class="login__form">
+                                <div class="input login__input login__input-reg">   
+                                    <input type="text"   name="name"  class="input__text" required>
+                                    <label class="label">ФИО</label>
+                                </div>
+                                <div class="input login__input login__input-reg">   
+                                    <input class=" input__text" required>
+                                    <label class="label">Телефон</label>
+                                </div>
+                                <div class="input login__input login__input-reg">   
+                                    <input type="email"   class=" input__text" required>
+                                    <label class="label">Email</label>
+                                </div>
+                                <div class="input login__input login__input-reg">   
+                                    <input type="password" id="password__reg" class=" input__text" required>
+                                    <label class="label">Пароль</label>
+                                    <div>
+                                        <img  data-hide src="icons/open_eye.svg" alt="eye" class="open__eye fade hide">
+                                        <img  data-show src="icons/close_eye.svg" alt="eye" class="close__eye fade">
+                                    </div>
+                                </div>
+                                <div class="input login__input login__input-reg">   
+                                    <input type="password" id="password__reg-repeat" class=" input__text" required>
+                                    <label class="label">Пароль повторно</label>
+                                    <div>
+                                        <img  data-hide src="icons/open_eye.svg" alt="eye" class="open__eye fade hide">
+                                        <img  data-show src="icons/close_eye.svg" alt="eye" class="close__eye fade">
+                                    </div>
+                                </div>
+                                
+                                <div class="login__politics">   
+                                    <input type="checkbox" required>
+                                    <div class="login__politics-text">
+                                        Я принимаю “ <a href="https://burgerkingrus.ru/docs/privacy.pdf">условия использования</a> ” и “<a href="https://burgerkingrus.ru/docs/privacy.pdf">политику конфеденциальности</a> ”
+                                    </div>
+                                </div>
+                                <div class="login__button">
+                                    <button class="button button__big button__dark">
+                                        Сохранить и продолжить  
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                    <div class="login__recovery hide fade">
+                        <button data-back class="login__tab login__tab-back  button">Назад</button>
+                        <div class="login__title">
+                            <h2>Восстановление пароля</h2>
+                        </div>
+                        <div class="login__text">
+                            Укажите почту на которую регестрировали аккаунт
+                        </div>
+                        <form action="#" class="login__form">
+                            <div class="input login__input login__input-recovery">   
+                                <input class="input__text" required>
+                                <label class="label">Email</label>
+                            </div>
+                            <div class="login__button login__button-recovery">
+                                <button class="button button__big button__dark">
+                                    Восстановить
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="login__code hide">
+                        <button class="login__tab login__tab-back  button">Назад</button>
+                        <div class="login__title">
+                            <h2>Проверьте почту, мы отправили код для подтверждения</h2>
+                        </div>
+                        
+                        <form action="#" class="login__form">
+                            <div class="input login__input login__input-recovery">   
+                                <input class="input__text login__input-recovery-text" required>
+                                <label class="label">Введите код</label>
+                            </div>
+                            <div class="login__button login__button-recovery">
+                                <button class="button button__big button__dark">
+                                    Восстановить
+                                </button>
+                            </div>
+                        </form>
+                        <div class="login__text login__text-code">
+                            Не пришел код? <button class="button__clear button__clear-red">Отправить код снова</button>
+                        </div>
+                    </div>
+
+                    <div class="login__new-password hide fade">
+                        <button data-back class="login__tab login__tab-back  button">Назад</button>
+                        <div class="login__title">
+                            <h2>Смена пароля</h2>
+                        </div>
+                        <div class="login__text">
+                            Пароль должен содержать не менее 8 латинских букв, цифр, или символов
+                        </div>
+                        <form action="#" class="login__form">
+                            <div class="input login__input login__input-reg">   
+                                <input type="password" id="new-password__reg" class=" input__text" required>
+                                <label class="label">Пароль</label>
+                                <div>
+                                    <img  data-hide src="icons/open_eye.svg" alt="eye" class="open__eye fade hide">
+                                    <img  data-show src="icons/close_eye.svg" alt="eye" class="close__eye fade">
+                                </div>
+                            </div>
+                            <div class="input login__input login__input-reg">   
+                                <input type="password" id="new-password__reg-repeat" class=" input__text" required>
+                                <label class="label">Пароль повторно</label>
+                                <div>
+                                    <img  data-hide src="icons/open_eye.svg" alt="eye" class="open__eye fade hide">
+                                    <img  data-show src="icons/close_eye.svg" alt="eye" class="close__eye fade">
+                                </div>
+                            </div>
+                            <div class="login__button login__button-recovery">
+                                <button class="button button__big button__dark">
+                                    Сохранить
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <div class="footer__links">
+                        <a href="#" class="footer__link">О компании</a>
+                        <a href="#" class="footer__link">Акции</a>
+                        <a href="#" class="footer__link">Зона и условия доставки</a>
+                    </div>
+                    <div class="footer__politics">
+                        <h3>Политика конфиденциальности</h3>
+                        <p class="footer__text">Предложение не является публичной офертой. <br>
+                        Мы не несем ответствееность за состав и свежесть наших блюд. В этом самый СМАК!!!!!!11!!1!</p>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__social">
+                        <a href="https://vk.com/styleru"><img src="icons/vk.svg" alt="vk"></a>
+                        <a href="https://t.me/styleruorg"><img src="icons/tg.svg" alt="tg"></a>
+                        <a href="#"><img src="icons/dzen.svg" alt="dzen"></a>
+                        <a href="#"><img src="icons/ok.svg" alt="ok"></a>
+                    </div>
+                    <div class="footer__text">
+                        СМАК 2023 - 2023 &copy;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/login.js"></script>
+</body>
+</html>
