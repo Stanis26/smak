@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/busket.min.css">
+    <title>Корзина</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/verveine" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__navigation">
+                    <div class="header__logo">
+                        <img src="icons/busket.svg" alt="logo">
+                    </div>
+                    <nav class="header__nav">
+                        <a href="#menu" class="header__link">Меню</a>
+                        <a href="#stocks" class="header__link">Акции</a>
+                        <a href="#" class="header__link">О компании</a>
+                        <a href="#" class="header__link">Доставка</a>
+                        <a href="#order" class="header__link">Поддержка</a>
+                    </nav>
+                </div>
+                <div class="header__profile">
+                    <div class="header__profile-icon">
+                        <img src="icons/busket.svg" alt="busket">
+                    </div>
+                    <div class="header__profile-money">
+                        0 ₽ 
+                    </div>
+                    <div class="header__profile-img">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="big__container">
+        <h1 class="title">Корзина</h1>
+        <section class="busket">
+            <div class="busket__left">
+                <section class="busket-order">
+                    <div class="busket-order__wrapper">
+                        <div class="busket-order__items">
+                            <div class="busket-order__item">
+                                <div class="busket-order__item-info">
+                                    <div class="busket-order__food">
+                                        <img src="img/detalini.svg" alt="food" class="busket-order__img">
+                                        <div class="busket-order__info">
+                                            <div class="busket-order__name">
+                                                Деталини с соусом из зеленого горошка с помидорами черри
+                                            </div>
+                                            <div class="busket-order__supplement">
+                                                Дополнительно пармезан
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="busket-order__cost">
+                                        <div class="busket-order__price">
+                                            1200 Р
+                                        </div>
+                                        <div class="busket-order__button">
+                                            <div class="button__counter">
+                                                <button class="button__minus"><img src="icons/minus.svg" alt="minus"></button>
+                                                    <div class="button__counter-number">1</div>
+                                                <button class="button__plus"><img src="icons/plus.svg" alt="plus"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider divider__bottom"></div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+    
+                <section class="busket-adding">
+                    <div class="busket-adding__wrapper">
+                        <div class="busket-adding__title">
+                            <h2>Добавить к заказу</h2>
+                        </div>
+                        <div class="busket-adding__menu">
+                            <div class="busket-adding__content ">
+                                <div class="busket-adding__content-wrapper">
+                                    <div class="busket-adding__content-photo">
+                                        <img src="img/detalini.svg" alt="snake"  class="busket-adding__content-img">
+                                        <div class="busket-adding__content-photo-back"></div>
+                                    </div>
+                                    <h2 class="busket-adding__content-title">
+                                        Деталини с соусом из зеленого горошка с помидорами черри
+                                    </h2>
+                                    <div class="busket-adding__content-buy">
+                                        <div class="busket-adding__content-cost">
+                                            <div class="busket-adding__content-price">
+                                                675 ₽
+                                            </div>
+                                        </div>
+                                        <button class="button button__mini">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="busket-adding__content ">
+                                <div class="busket-adding__content-wrapper">
+                                    <div class="busket-adding__content-photo">
+                                        <img src="img/detalini.svg" alt="snake"  class="busket-adding__content-img">
+                                        <div class="busket-adding__content-photo-back"></div>
+                                    </div>
+                                    <h2 class="busket-adding__content-title">
+                                        Деталини с соусом из зеленого горошка с помидорами черри
+                                    </h2>
+                                    <div class="busket-adding__content-buy">
+                                        <div class="busket-adding__content-cost">
+                                            <div class="busket-adding__content-price">
+                                                675 ₽
+                                            </div>
+                                        </div>
+                                        <button class="button button__mini">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="busket-adding__content ">
+                                <div class="busket-adding__content-wrapper">
+                                    <div class="busket-adding__content-photo">
+                                        <img src="img/detalini.svg" alt="snake"  class="busket-adding__content-img">
+                                        <div class="busket-adding__content-photo-back"></div>
+                                    </div>
+                                    <h2 class="busket-adding__content-title">
+                                        Деталини с соусом из зеленого горошка с помидорами черри
+                                    </h2>
+                                    <div class="busket-adding__content-buy">
+                                        <div class="busket-adding__content-cost">
+                                            <div class="busket-adding__content-price">
+                                                675 ₽
+                                            </div>
+                                        </div>
+                                        <button class="button button__mini">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="busket-adding__content ">
+                                <div class="busket-adding__content-wrapper">
+                                    <div class="busket-adding__content-photo">
+                                        <img src="img/detalini.svg" alt="snake"  class="busket-adding__content-img">
+                                        <div class="busket-adding__content-photo-back"></div>
+                                    </div>
+                                    <h2 class="busket-adding__content-title">
+                                        Деталини с соусом из зеленого горошка с помидорами черри
+                                    </h2>
+                                    <div class="busket-adding__content-buy">
+                                        <div class="busket-adding__content-cost">
+                                            <div class="busket-adding__content-price">
+                                                675 ₽
+                                            </div>
+                                        </div>
+                                        <button class="button button__mini">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="busket__right">
+                <section class="busket-geoposition">
+                    <div class="busket-geoposition__wrapper">
+                        <div class="busket-geoposition__up">
+                            <div class="busket-geoposition__title">
+                                <h2>Доставка</h2>
+                            </div>
+                            <button class="button__clear">Изменить</button>
+                        </div>
+                        <div class="busket-geoposition__local">
+                            г Москва, Покровский б-р, д 11
+                        </div>
+                    </div>
+    
+                </section>
+    
+                <section class="busket-result">
+                    <div class="busket-result__wrapper">
+                        <div class="busket-result__title">
+                            <h2>Ваш заказ</h2>
+                        </div>
+                        <div class="busket-result__promo">
+                            <input type="text" placeholder="Введите промокод: STANIS" class="busket-result__input">
+                            <button class="button">Добавить</button>
+                        </div>
+                        <div class="divider divider__bottom"></div>
+                            <div class="busket-result__category">
+                                <div class="busket-result__text">Корзина</div>
+                                <div class="busket-result__price">1200 ₽</div>
+                            </div>
+                            <div class="busket-result__category">
+                                <div class="busket-result__text">Сумма скидки</div>
+                                <div class="busket-result__price">200 ₽</div>
+                            </div>
+                        <div class="divider divider__bottom"></div>
+                        <div class="busket-result__cost">
+                            <div class="busket-result__end">Итого</div>
+                            <div class="busket-result__summ">1000 ₽</div>
+                        </div>
+                        <button class="button button__big">Оформить заказ</button>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </section>
+    
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <div class="footer__links">
+                        <a href="#" class="footer__link">О компании</a>
+                        <a href="#" class="footer__link">Акции</a>
+                        <a href="#" class="footer__link">Зона и условия доставки</a>
+                    </div>
+                    <div class="footer__politics">
+                        <h3>Политика конфиденциальности</h3>
+                        <p class="footer__text">Предложение не является публичной офертой. <br>
+                        Мы не несем ответствееность за состав и свежесть наших блюд. В этом самый СМАК!!!!!!11!!1!</p>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__social">
+                        <a href="https://vk.com/styleru"><img src="icons/vk.svg" alt="vk"></a>
+                        <a href="https://t.me/styleruorg"><img src="icons/tg.svg" alt="tg"></a>
+                        <a href="#"><img src="icons/dzen.svg" alt="dzen"></a>
+                        <a href="#"><img src="icons/ok.svg" alt="ok"></a>
+                    </div>
+                    <div class="footer__text">
+                        СМАК 2023 - 2023 &copy;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
